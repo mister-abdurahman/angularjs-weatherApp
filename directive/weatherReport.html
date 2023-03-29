@@ -1,0 +1,17 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Weather Forcast</h3>
+  </div>
+  <div class="panel-body">
+    <p>
+      📅 Date : {{convertToStandard({dt: weatherResult.dt}) | date: dateFormat}}
+    </p>
+    <p>
+      🌞 Day-time Temperature: {{convertToCelsius({degK:
+      weatherResult.main.temp}) }}°C
+    </p>
+    <p>💦 Humidity: {{weatherResult.main.humidity}}</p>
+    <p>⌚ Timezone: {{weatherResult.timezone}}</p>
+    <p>⛅ Weather: {{weatherResult.weather[0].description}}</p>
+  </div>
+</div>

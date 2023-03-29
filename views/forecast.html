@@ -1,0 +1,13 @@
+<div><a href="#/">Back To Search</a></div>
+Forcast for {{city}}
+<span style="width: 10px">
+  <img src="https://flagsapi.com/{{countrycode}}/flat/64.png" alt="" />
+</span>
+<div class="row">
+  <weather-report
+    weather-result="weatherResult"
+    convert-to-standard="convertToDate(dt)"
+    convert-to-celsius="convertToCelsius(degK)"
+    date-format="MMM d, y"
+  ></weather-report>
+</div>
